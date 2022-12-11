@@ -2,7 +2,8 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     fontFamily: {
-      primary: ['Prompt', 'sans-serif'],
+      primary: ["Prompt", "sans-serif"],
+      logo: ["Old Standard TT", "serif"],
     },
     container: {
       padding: {
