@@ -7,8 +7,8 @@ module.exports = {
     },
     container: {
       padding: {
-        default: "16px",
-        lg: "0",
+        DEFAULT: "16px",
+        // lg: "0",
       },
     },
     screens: {
