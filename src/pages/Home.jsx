@@ -10,7 +10,7 @@ import Product from "../components/Product";
 const Home = () => {
   // get products from product context
   const { products } = useContext(ProductContext);
-  console.log(products);
+  // console.log(products);
 
   // get only women's & men's clothing category
   const filteredProducts = products.filter((item) => {
@@ -27,12 +27,7 @@ const Home = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-5 gap-4 max-w-sm mx-auto md:max-w-none md:mx-0">
             {filteredProducts.map((product) => {
-              return (
-                // <div className="w-full h-[300px] bg-blue-300" key={product.id}>
-                //   {product.title}
-                // </div>
-                <Product product={product} key={product.id} />
-              );
+              return <Product product={product} key={product.id} />;
             })}
           </div>
         </div>

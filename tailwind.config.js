@@ -20,8 +20,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        // primary: "",
-        // secondary: "",
+        primary: "#222",
+        secondary: "#F5E6E0",
       },
       // backgroundImage: {},
     },
