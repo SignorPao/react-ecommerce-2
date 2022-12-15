@@ -6,8 +6,12 @@ import { Link } from "react-router-dom";
 // import icons
 import { BsPlus, BsEyeFill } from "react-icons/bs";
 
+// import cart context
+import { CartContext } from "../contexts/CartContext";
+
 const Product = ({ product }) => {
-  console.log(product);
+  // get cart context
+  const { addToCart } = useContext(CartContext);
 
   // destructure product
   const { id, image, category, title, price } = product;
@@ -29,12 +33,14 @@ const Product = ({ product }) => {
 
         {/* buttons */}
         <div className="absolute top-0 -right-12 group-hover:right-0 flex flex-col items-center justify-center gap-y-1 opacity-0 group-hover:opacity-100 transition-all duration-300">
-          <button>
+          {/* add to cart */}
+          <button onClick={() => addToCart(product, id)}>
             <div className="flex items-center justify-center text-white w-12 h-12 bg-blue-500">
               <BsPlus className="text-3xl" />
             </div>
           </button>
 
+          {/* view product details */}
           <Link
             to={`/product/${id}`}
             className="h-12 w-12 bg-white flex items-center justify-center text-primary drop-shadow-xl"
@@ -50,7 +56,7 @@ const Product = ({ product }) => {
         <Link to={`/product/${id}`}>
           <h2 className="font-semibold mb-1">{title}</h2>
         </Link>
-        <div className="font-semibold text-blue-500">$ {price}</div>
+        <div className="font-semibold text-accent">$ {price}</div>
       </div>
     </div>
   );

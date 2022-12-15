@@ -22,6 +22,7 @@ module.exports = {
       colors: {
         primary: "#222",
         secondary: "#F5E6E0",
+        accent: "#26BBAA",
       },
       // backgroundImage: {},
     },
