@@ -21,7 +21,7 @@ const Sidebar = () => {
   const { isOpen, handleClose } = useContext(SidebarContext);
 
   // get cart
-  const { cart, clearCart } = useContext(CartContext);
+  const { cart, clearCart, total, itemAmount } = useContext(CartContext);
 
   return (
     <div
@@ -31,7 +31,7 @@ const Sidebar = () => {
     >
       {/* sidebar header */}
       <div className="flex items-center justify-between border-b h-[10vh]">
-        <div className="uppercase font-semibold text-sm">Shopping Bag (0)</div>
+        <div className="uppercase font-semibold text-sm">Shopping Bag ({itemAmount})</div>
 
         {/* icon */}
         <div
@@ -50,11 +50,12 @@ const Sidebar = () => {
       </div>
 
       {/* bottom */}
-      <div className="flex h-[10vh]">
+      <div className="flex h-[10vh] border-t">
         <div className="flex w-full items-center justify-between">
           {/* total */}
           <div className="uppercase font-semibold">
-            <span className="mr-1">Total: </span>$ 1000
+            <span className="mr-1">Total: </span>${" "}
+            {parseFloat(total).toFixed(2)}
           </div>
 
           {/* clear icon */}
