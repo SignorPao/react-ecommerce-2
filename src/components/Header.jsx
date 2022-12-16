@@ -43,7 +43,7 @@ const Header = () => {
         <Link to={"/"}>
           <div className="flex items-center">
             <img src={Logo} alt="logo" className="w-[40px]" />{" "}
-            <span className="font-logo font-bold text-3xl text-accent">
+            <span className="font-logo font-bold text-xl lg:text-3xl text-accent">
               React Ecommerce
             </span>
           </div>

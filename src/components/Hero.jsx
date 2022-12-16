@@ -1,9 +1,47 @@
-import React from 'react'
+import React from "react";
+
+// import link
+import { Link } from "react-router-dom";
+
+// import hero img
+import HeroImg from "../assets/hero.png";
 
 const Hero = () => {
   return (
-    <div>Hero</div>
-  )
-}
+    <section className="h-screen py-24">
+      <div className="container mx-auto flex flex-col lg:flex-row justify-between h-full">
+        {/* text */}
+        <div className="flex-1 order-2 lg:order-1 flex flex-col justify-center gap-y-6">
+          {/* pretitle */}
+          <div className="font-semibold flex items-center uppercase text-xs lg:text-base justify-center lg:justify-start">
+            <div className="w-10 h-[1px] lg:h-[2px] bg-accent mr-3" />
+            New Trend
+          </div>
 
-export default Hero
+          {/* title */}
+          <h1 className="text-3xl lg:text-[70px] xl:text-[80px] leading-[1.1] font-extralight font-logo text-center lg:text-left">
+            Men's And Women's Clothing Online
+          </h1>
+
+          <Link
+            to={"/"}
+            className="w-fit self-center lg:self-start text-center text-xs lg:text-base uppercase font-semibold border-b-[1px] lg:border-b-2 border-accent"
+          >
+            Discover More
+          </Link>
+        </div>
+
+        {/* image */}
+        <div className="flex-1 w-full h-full flex items-center justify-center lg:justify-end order-1 lg:order-2">
+          <img
+            src={HeroImg}
+            alt="hero"
+            className="h-[50vh] xl:h-[90vh] object-cover"
+          />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
