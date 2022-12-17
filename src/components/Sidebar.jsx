@@ -72,7 +72,7 @@ const Sidebar = () => {
         {/* view cart */}
         <Link
           to={"/"}
-          className="bg-gray-200 flex items-center justify-center p-2 text-primary w-full font-medium"
+          className="bg-white flex items-center justify-center p-2 text-blue-500 border border-blue-500 w-full font-medium"
         >
           View cart
         </Link>
@@ -80,7 +80,7 @@ const Sidebar = () => {
         {/* checkout */}
         <Link
           to={"/"}
-          className="bg-blue-500 flex items-center justify-center p-2 text-primary w-full font-medium"
+          className="bg-blue-500 flex items-center justify-center p-2 text-white w-full font-medium"
         >
           Checkout
         </Link>

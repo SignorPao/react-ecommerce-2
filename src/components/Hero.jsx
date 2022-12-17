@@ -11,7 +11,7 @@ const Hero = () => {
     <section className="h-screen py-24">
       <div className="container mx-auto flex flex-col lg:flex-row justify-between h-full">
         {/* text */}
-        <div className="flex-1 order-2 lg:order-1 flex flex-col justify-center gap-y-6">
+        <div className="flex-1 lg:flex-[55%] order-2 lg:order-1 flex flex-col justify-center gap-y-6">
           {/* pretitle */}
           <div className="font-semibold flex items-center uppercase text-xs lg:text-base justify-center lg:justify-start">
             <div className="w-10 h-[1px] lg:h-[2px] bg-accent mr-3" />
@@ -32,7 +32,7 @@ const Hero = () => {
         </div>
 
         {/* image */}
-        <div className="flex-1 w-full h-full flex items-center justify-center lg:justify-end order-1 lg:order-2">
+        <div className="flex-1 lg:flex-[45%] w-full h-full flex items-center justify-center lg:justify-end order-1 lg:order-2">
           <img
             src={HeroImg}
             alt="hero"
