@@ -8,7 +8,7 @@ module.exports = {
     container: {
       padding: {
         DEFAULT: "16px",
-        // lg: "0",
+        xl: "0",
       },
     },
     screens: {
@@ -20,8 +20,10 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#222",
-        secondary: "#F5E6E0",
+        // primary: "#3B82F6",
+        primary: "#007CC0",
+        black: "#222",
+        // secondary: "#F5E6E0",
         accent: "#26BBAA",
       },
       // backgroundImage: {},

@@ -31,7 +31,7 @@ const Sidebar = () => {
     >
       {/* sidebar header */}
       <div className="flex-shrink flex items-center justify-between py-4 border-b">
-        <div className="uppercase font-semibold text-sm">
+        <div className="uppercase font-semibold text-sm text-black">
           Shopping Bag ({itemAmount})
         </div>
 
@@ -40,12 +40,12 @@ const Sidebar = () => {
           onClick={handleClose}
           className="cursor-pointer w-8 h-8 flex items-center justify-center"
         >
-          <IoMdArrowForward className="text-2xl" />
+          <IoMdArrowForward className="text-2xl text-black" />
         </div>
       </div>
 
       {/* cart list */}
-      <div className="flex-grow flex flex-col gap-y-2 overflow-y-auto overflow-x-hidden">
+      <div className="flex-grow flex flex-col gap-y-2 overflow-y-auto overflow-x-hidden px-2">
         {cart.map((item) => {
           return <CartItem item={item} key={item.id} />;
         })}
@@ -56,7 +56,7 @@ const Sidebar = () => {
         <div className="flex w-full items-center justify-between">
           {/* total */}
           <div className="uppercase font-semibold text-accent">
-            <span className="mr-1 text-primary">Total: </span>${" "}
+            <span className="mr-1 text-black">Total: </span>${" "}
             {parseFloat(total).toFixed(2)}
           </div>
 
@@ -72,7 +72,7 @@ const Sidebar = () => {
         {/* view cart */}
         <Link
           to={"/"}
-          className="bg-white flex items-center justify-center p-2 text-blue-500 border border-blue-500 w-full font-medium"
+          className="bg-white flex items-center justify-center p-2 text-primary border border-primary w-full font-medium"
         >
           View cart
         </Link>
@@ -80,7 +80,7 @@ const Sidebar = () => {
         {/* checkout */}
         <Link
           to={"/"}
-          className="bg-blue-500 flex items-center justify-center p-2 text-white w-full font-medium"
+          className="bg-primary flex items-center justify-center p-2 text-white w-full font-medium"
         >
           Checkout
         </Link>

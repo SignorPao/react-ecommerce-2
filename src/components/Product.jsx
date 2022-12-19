@@ -35,7 +35,7 @@ const Product = ({ product }) => {
         <div className="absolute top-0 -right-12 group-hover:right-0 flex flex-col items-center justify-center gap-y-1 opacity-0 group-hover:opacity-100 transition-all duration-300">
           {/* add to cart */}
           <button onClick={() => addToCart(product, id)}>
-            <div className="flex items-center justify-center text-white w-12 h-12 bg-blue-500">
+            <div className="flex items-center justify-center text-white w-12 h-12 bg-primary">
               <BsPlus className="text-3xl" />
             </div>
           </button>
@@ -43,7 +43,7 @@ const Product = ({ product }) => {
           {/* view product details */}
           <Link
             to={`/product/${id}`}
-            className="h-12 w-12 bg-white flex items-center justify-center text-primary drop-shadow-xl"
+            className="h-12 w-12 bg-white flex items-center justify-center text-black drop-shadow-xl"
           >
             <BsEyeFill />
           </Link>
@@ -51,7 +51,7 @@ const Product = ({ product }) => {
       </div>
 
       {/* category / title / price */}
-      <div>
+      <div className="text-black">
         <div className="text-sm capitalize text-gray-500 mb-1">{category}</div>
         <Link to={`/product/${id}`}>
           <h2 className="font-semibold mb-1">{title}</h2>

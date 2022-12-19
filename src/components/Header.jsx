@@ -7,7 +7,8 @@ import { SidebarContext } from "../contexts/SidebarContext";
 import { CartContext } from "../contexts/CartContext";
 
 // import link
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 
 // import logo
 import Logo from "../assets/logo.png";
@@ -40,7 +41,7 @@ const Header = () => {
     >
       <div className="container mx-auto flex items-center justify-between h-full">
         {/* logo */}
-        <Link to={"/"}>
+        <Link to={"/#home"}>
           <div className="flex items-center">
             <img src={Logo} alt="logo" className="w-[40px]" />{" "}
             <span className="font-logo font-bold text-xl lg:text-3xl text-accent">

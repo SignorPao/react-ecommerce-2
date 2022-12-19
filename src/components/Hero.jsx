@@ -1,7 +1,8 @@
 import React from "react";
 
 // import link
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 
 // import hero img
 import HeroImg from "../assets/hero.png";
@@ -9,7 +10,7 @@ import HeroImg from "../assets/hero.png";
 const Hero = () => {
   return (
     <section className="h-screen py-24">
-      <div className="container mx-auto flex flex-col lg:flex-row justify-between h-full">
+      <div className="container mx-auto flex flex-col lg:flex-row justify-between h-full text-black">
         {/* text */}
         <div className="flex-1 lg:flex-[55%] order-2 lg:order-1 flex flex-col justify-center gap-y-6">
           {/* pretitle */}
@@ -24,8 +25,8 @@ const Hero = () => {
           </h1>
 
           <Link
-            to={"/"}
-            className="w-fit self-center lg:self-start text-center text-xs lg:text-base uppercase font-semibold border-b-[1px] lg:border-b-2 border-accent"
+            to={"/#products"}
+            className="w-fit self-center lg:self-start text-center text-xs lg:text-base uppercase font-semibold border-b-[1px] lg:border-b-2 border-accent hover:text-accent transition duration-300"
           >
             Discover More
           </Link>

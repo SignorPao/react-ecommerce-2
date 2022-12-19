@@ -31,7 +31,7 @@ const CartItem = ({ item }) => {
             {/* title */}
             <Link
               to={`/product/${id}`}
-              className="text-sm uppercase font-medium max-w-[210px] text-primary hover:underline"
+              className="text-sm uppercase font-medium max-w-[210px] text-black hover:underline"
             >
               {title}
             </Link>
@@ -48,7 +48,7 @@ const CartItem = ({ item }) => {
           {/* quantity & price */}
           <div className="flex gap-x-2 h-[36px] text-sm">
             {/* quantity */}
-            <div className="flex flex-1 max-w-[100px] items-center h-full border text-primary font-medium">
+            <div className="flex flex-1 max-w-[100px] items-center h-full border text-black font-medium">
               {/* minus */}
               <div
                 className="flex-1 h-full flex items-center justify-center cursor-pointer active:scale-125 hover:text-red-500"
