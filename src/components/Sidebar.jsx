@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useRef, useEffect } from "react";
 
 // import link
 import { Link } from "react-router-dom";
@@ -18,16 +18,33 @@ import CartItem from "../components/CartItem";
 
 const Sidebar = () => {
   // get state & handlers from sidebar context
-  const { isOpen, handleClose } = useContext(SidebarContext);
+  const { isOpen, setIsOpen, handleClose } = useContext(SidebarContext);
 
   // get cart
   const { cart, clearCart, total, itemAmount } = useContext(CartContext);
+
+  // sidebar ref
+  const btnRef = useRef();
+
+  // click outside to close sidebar cart list
+  useEffect(() => {
+    let handler = (e) => {
+      if (!btnRef.current.contains(e.target)) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handler);
+    return () => {
+      document.removeEventListener("mousedown", handler);
+    };
+  });
 
   return (
     <div
       className={`${
         isOpen ? "right-0" : "-right-full"
       } w-full md:w-[45vw] xl:max-w-[30vw] h-screen bg-white fixed top-0 shadow-2xl transition-all duration-300 z-20 px-4 lg:px-[35px] select-none flex flex-col`}
+      ref={btnRef}
     >
       {/* sidebar header */}
       <div className="flex-shrink flex items-center justify-between py-4 border-b">

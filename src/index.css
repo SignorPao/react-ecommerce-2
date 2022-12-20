@@ -31,7 +31,6 @@ html {
 }
 
 ::-webkit-scrollbar-thumb{
-  /* background-color: #3B82F6; */
   background-color: #007CC0;
   border-radius: 50px;
 }
