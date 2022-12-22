@@ -17,6 +17,7 @@ const Hero = () => {
           <div className="font-semibold flex items-center uppercase text-xs lg:text-base justify-center lg:justify-start">
             <div className="w-10 h-[1px] lg:h-[2px] bg-accent mr-3" />
             New Trend
+            <div className="w-10 lg:w-0 h-[1px] lg:h-[2px] bg-accent ml-3" />
           </div>
 
           {/* title */}
