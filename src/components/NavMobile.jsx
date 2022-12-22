@@ -15,11 +15,11 @@ const NavMobile = ({ click }) => {
           </Link>
           {/* </NavLink> */}
         </li>
-        <li className="hover:text-accent transition duration-300">
+        {/* <li className="hover:text-accent transition duration-300">
           <NavLink to="/cart" onClick={click}>
             Cart
           </NavLink>
-        </li>
+        </li> */}
         <li className="hover:text-accent transition duration-300">
           <NavLink to="login" onClick={click}>
             Login

@@ -106,9 +106,9 @@ const Header = () => {
             <li className="hover:text-accent transition duration-300">
               <Link to={"/#home"}>Home</Link>
             </li>
-            <li className="hover:text-accent transition duration-300">
+            {/* <li className="hover:text-accent transition duration-300">
               <NavLink to="/cart">Cart</NavLink>
-            </li>
+            </li> */}
             <li className="hover:text-accent transition duration-300">
               <NavLink to="login">Login</NavLink>
             </li>

@@ -10,7 +10,6 @@ import Product from "../components/Product";
 const Home = () => {
   // get products from product context
   const { products } = useContext(ProductContext);
-  // console.log(products);
 
   // get only women's & men's clothing category
   const filteredProducts = products.filter((item) => {
@@ -18,8 +17,6 @@ const Home = () => {
       item.category === "men's clothing" || item.category === "women's clothing"
     );
   });
-
-  // console.log(filteredProducts);
 
   return (
     <div id="home">

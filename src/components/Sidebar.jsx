@@ -88,8 +88,9 @@ const Sidebar = () => {
 
         {/* view cart */}
         <Link
-          to={"/"}
-          className="bg-white flex items-center justify-center p-2 text-primary border border-primary w-full font-medium"
+          to={"/cart"}
+          className="bg-white capitalize flex items-center justify-center p-2 text-primary border border-primary w-full font-medium"
+          onClick={handleClose}
         >
           View cart
         </Link>
@@ -97,7 +98,7 @@ const Sidebar = () => {
         {/* checkout */}
         <Link
           to={"/"}
-          className="bg-primary flex items-center justify-center p-2 text-white w-full font-medium"
+          className="bg-primary capitalize flex items-center justify-center p-2 text-white w-full font-medium"
         >
           Checkout
         </Link>
