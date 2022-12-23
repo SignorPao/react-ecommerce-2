@@ -97,7 +97,7 @@ const Sidebar = () => {
 
         {/* checkout */}
         <Link
-          to={"/"}
+          to={"#!"}
           className="bg-primary capitalize flex items-center justify-center p-2 text-white w-full font-medium"
         >
           Checkout
