@@ -167,7 +167,7 @@ const Cart = () => {
 
               {/* checkout */}
               <Link
-                to={"#!"}
+                to={"/checkout"}
                 className="bg-primary max-w-[350px] capitalize flex items-center justify-center p-2 text-white w-full font-medium"
               >
                 Checkout

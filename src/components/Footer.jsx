@@ -109,6 +109,9 @@ const Footer = () => {
                 <NavLink to="/cart">Cart</NavLink>
               </li>
               <li className="hover:text-white transition duration-300 max-w-fit">
+                <NavLink to="/checkout">Checkout</NavLink>
+              </li>
+              <li className="hover:text-white transition duration-300 max-w-fit">
                 <NavLink to="login">Login</NavLink>
               </li>
               <li className="hover:text-white transition duration-300 max-w-fit">
