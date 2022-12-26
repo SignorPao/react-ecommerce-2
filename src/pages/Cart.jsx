@@ -6,7 +6,7 @@ import { HashLink as Link } from "react-router-hash-link";
 
 // import icons
 import { BsCart3 } from "react-icons/bs";
-import { IoMdClose, IoMdRemove, IoMdAdd } from "react-icons/io";
+import { IoMdRemove, IoMdAdd } from "react-icons/io";
 
 // import cart context
 import { CartContext } from "../contexts/CartContext";
