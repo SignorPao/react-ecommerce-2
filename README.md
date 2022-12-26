@@ -3,10 +3,10 @@
 react Ecommerce website with fakestore API
 
 <div>
-  <img src="./src/screenshots/screencapture-localhost-3000-2022-12-26-19_15_29.png" width="350" />
-  <img src="./src/screenshots/screencapture-localhost-3000-cart-2022-12-26-19_18_52.png" width="350" />
-  <img src="./src/screenshots/screencapture-localhost-3000-checkout-2022-12-26-19_19_19.png" width="350" />
-  <img src="./src/screenshots/screencapture-localhost-3000-login-2022-12-26-19_18_01.png" width="350" />
+  <img src="./src/screenshots/screencapture-localhost-3000-2022-12-26-19_15_29.png" width="200" />
+  <img src="./src/screenshots/screencapture-localhost-3000-cart-2022-12-26-19_18_52.png" width="200" />
+  <img src="./src/screenshots/screencapture-localhost-3000-checkout-2022-12-26-19_19_19.png" width="200" />
+  <img src="./src/screenshots/screencapture-localhost-3000-login-2022-12-26-19_18_01.png" width="200" />
 </div>
 
 <div>
