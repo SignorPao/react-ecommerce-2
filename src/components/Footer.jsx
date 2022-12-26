@@ -27,6 +27,7 @@ const Footer = () => {
       <div className="container mx-auto">
         {/* footer top */}
         <div className="border-b border-white/20 py-8 flex flex-col gap-y-8 lg:gap-y-0 lg:flex-row lg:gap-x-8">
+
           {/* logo & desc */}
           <div className="lg:flex-[30%] flex flex-col gap-y-3">
             <Link to={"/#home"}>

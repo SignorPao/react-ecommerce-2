@@ -24,6 +24,7 @@ const Checkout = () => {
         <div className="container mx-auto flex flex-col gap-y-20 lg:flex-row lg:gap-x-16">
           {/* payment */}
           <div className="flex flex-col lg:w-3/5 order-2 lg:order-1">
+            
             {/* checkout header */}
             <div className="mb-6">
               <h3 className="text-xl text-center lg:text-left lg:text-3xl font-medium">

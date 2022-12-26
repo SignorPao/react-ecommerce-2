@@ -41,6 +41,7 @@ const ProductDetails = () => {
       <div className="container mx-auto h-full">
         {/* image & text wrapper */}
         <div className="flex flex-col lg:flex-row items-center">
+          
           {/* image */}
           <div className="flex-1 flex items-center justify-center mb-8 lg:mb-0">
             <img

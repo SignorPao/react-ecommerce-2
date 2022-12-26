@@ -1,7 +1,6 @@
 import React from "react";
 
 // import link
-// import { Link } from "react-router-dom";
 import { HashLink as Link } from 'react-router-hash-link';
 
 // import hero img
@@ -13,6 +12,7 @@ const Hero = () => {
       <div className="container mx-auto flex flex-col lg:flex-row justify-between h-full text-black">
         {/* text */}
         <div className="flex-1 lg:flex-[55%] order-2 lg:order-1 flex flex-col justify-center gap-y-6">
+          
           {/* pretitle */}
           <div className="font-semibold flex items-center uppercase text-xs lg:text-base justify-center lg:justify-start">
             <div className="w-10 h-[1px] lg:h-[2px] bg-accent mr-3" />
